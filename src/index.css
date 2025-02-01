@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background: linear-gradient(90deg, rgba(79,55,242,1) 18%, rgba(0,0,0,1) 51%, rgba(1,201,241,1) 83%);
+    overflow-x: hidden;
+  }
+  
+
+  /* Apply to all scrollbars globally */
+* {
+    scrollbar-width: thin; /* For Firefox: Makes the scrollbar thin */
+    scrollbar-color: #6a11cb #f1f1f1; /* Thumb color and track color */
+  }
+  
+  /* Custom scrollbar styling for Webkit browsers (Chrome, Edge, Safari) */
+  *::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height for horizontal scrollbar */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient thumb color */
+    
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #4c08a1, #1e4db7); /* Hover effect */
+  }
+  
+  /* Smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth; /* Enables smooth scrolling globally */
+  }
+  
